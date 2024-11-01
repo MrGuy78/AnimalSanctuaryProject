@@ -1,8 +1,8 @@
 package com.skilldistillery.sanctuary.entities;
 
-public class Fox extends Animal {
+public class ZombieDuck extends Animal {
 	
-	private static String noise = "Ringdingding";
+	private static String noise = "I'm gonna quack your brains!";
 	
 	@Override
 	public void makeNoise() {
@@ -12,5 +12,5 @@ public class Fox extends Animal {
 	public void eat(int amount) {
 		
 	}
-
+	
 }

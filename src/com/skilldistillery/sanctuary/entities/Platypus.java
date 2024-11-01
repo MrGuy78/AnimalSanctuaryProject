@@ -8,7 +8,7 @@ public class Platypus extends Animal {
 		System.out.println(noise);
 	}
 	
-	public void eat() {
+	public void eat(int amount) {
 		
 	}
 }
