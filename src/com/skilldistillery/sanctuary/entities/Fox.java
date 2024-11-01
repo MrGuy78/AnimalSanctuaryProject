@@ -1,6 +1,6 @@
 package com.skilldistillery.sanctuary.entities;
 
-public class Dog extends Animal {
+public class Fox extends Animal {
 	
 	private String noise;
 	
