@@ -7,7 +7,6 @@ public class Attendant {
 			if (animals[a] != null) {
 				System.out.println("I'll feed " + animals[a].getName() + " all the goods.");
 				animals[a].eat(10);
-
 			}
 
 			else if (animals[a] == null) {

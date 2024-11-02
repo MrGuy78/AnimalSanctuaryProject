@@ -3,20 +3,20 @@ package com.skilldistillery.sanctuary.entities;
 public class Sanctuary {
 	
 	private Animal [] sanctuaryAnimals = new Animal[5];
-	public void makeRounds() {
-		
-	}
+	private Attendant attendant = new Attendant();
 	
-	listAnimals() {
+	
+	public void listAnimals() {
 		System.out.println();
 	}
 	
-	startAttendantsRounds() {
-		
+	public void startAttendantsRounds() {
+		attendant.makeRounds(sanctuaryAnimals);
 	}
 	//set attendant
 	//listAnimals method
 	//addAnimal method
+	
 	//startAttendantRounds = makeRounds
 
 }

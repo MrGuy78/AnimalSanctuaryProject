@@ -11,6 +11,7 @@ public class Fox extends Animal {
 	
 	@Override
 	public void eat(int amount) {
+		makeNoise();
 		System.out.println("Here comes " + amount + " chocolate cakes!");
 	}
 

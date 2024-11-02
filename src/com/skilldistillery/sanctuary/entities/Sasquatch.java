@@ -11,6 +11,7 @@ public class Sasquatch extends Animal {
 	
 	@Override
 	public void eat(int amount) {
+		makeNoise();
 		System.out.println("And I love eating " + amount + " human livers!");
 	}
 	

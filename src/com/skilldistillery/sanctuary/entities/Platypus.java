@@ -11,6 +11,7 @@ public class Platypus extends Animal {
 	
 	@Override
 	public void eat(int amount) {
+		makeNoise();
 		System.out.println("My diet of " + amount + " snails is a secret!");
 	}
 }

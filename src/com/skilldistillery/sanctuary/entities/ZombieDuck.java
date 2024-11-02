@@ -11,6 +11,7 @@ public class ZombieDuck extends Animal {
 	
 	@Override
 	public void eat(int amount) {
+		makeNoise();
 		System.out.println("Oh! You're feeding me " + amount + " snails? Nom nom nom");
 	}
 	
