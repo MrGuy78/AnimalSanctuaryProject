@@ -6,6 +6,14 @@ public class Sanctuary {
 	public void makeRounds() {
 		
 	}
+	
+	listAnimals() {
+		System.out.println();
+	}
+	
+	startAttendantsRounds() {
+		
+	}
 	//set attendant
 	//listAnimals method
 	//addAnimal method

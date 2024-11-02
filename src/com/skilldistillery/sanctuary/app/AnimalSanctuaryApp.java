@@ -25,7 +25,7 @@ public class AnimalSanctuaryApp {
 				System.out.println();
 				
 			case "2":
-				System.out.println();
+				System.out.println("");
 				
 			case "3":
 				System.out.println();
@@ -33,6 +33,8 @@ public class AnimalSanctuaryApp {
 			case "4":
 				System.out.println();
 				
+			default:
+				System.out.println("Not a valid choice.");
 			}
 		}
 		
