@@ -1,8 +1,8 @@
 package com.skilldistillery.sanctuary.entities;
 
-public class Fox extends Animal {
+public class Sasquatch extends Animal {
 	
-	private static String noise = "Ringdingding";
+	private static String noise = "I'm invisible!";
 	
 	@Override
 	public void makeNoise() {
@@ -11,7 +11,7 @@ public class Fox extends Animal {
 	
 	@Override
 	public void eat(int amount) {
-		System.out.println("Here comes " + amount + " chocolate cakes!");
+		System.out.println("And I love eating " + amount + " human livers!");
 	}
-
+	
 }

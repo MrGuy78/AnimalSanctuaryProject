@@ -6,6 +6,9 @@ public class Sanctuary {
 	public void makeRounds() {
 		
 	}
-	
+	//set attendant
+	//listAnimals method
+	//addAnimal method
+	//startAttendantRounds = makeRounds
 
 }
