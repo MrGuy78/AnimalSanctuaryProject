@@ -6,17 +6,24 @@ public class Sanctuary {
 	private Attendant attendant = new Attendant();
 	
 	
-	public void listAnimals() {
-		System.out.println();
+	public void listAnimals(Animal[] sanctuaryAnimals) {
+		for (Animal animal : sanctuaryAnimals) {
+			System.out.println(animal.getName());
+		}
 	}
 	
 	public void startAttendantsRounds() {
 		attendant.makeRounds(sanctuaryAnimals);
 	}
-	//set attendant
 	//listAnimals method
-	//addAnimal method
 	
-	//startAttendantRounds = makeRounds
+	private void addAnimal(Animal animal) {
+		for(int i = 0; i < sanctuaryAnimals.length; i++) {
+			if(sanctuaryAnimals[i] == null) {
+				sanctuaryAnimals[i] = animal;
+				break;
+			}
+		}
+	}
 
 }
