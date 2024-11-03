@@ -6,9 +6,9 @@ import com.skilldistillery.sanctuary.entities.Sanctuary;
 
 public class AnimalSanctuaryApp {
 	private Sanctuary sanctuary = new Sanctuary();
-
+	
 	Scanner kb = new Scanner(System.in);
-
+	
 	public static void main(String[] args) {
 		AnimalSanctuaryApp app = new AnimalSanctuaryApp();
 		app.run();
@@ -23,20 +23,20 @@ public class AnimalSanctuaryApp {
 			int choice = kb.nextInt();
 			
 			switch(choice) {
-			case "1":
-				System.out.println(listAnimals());
+			case 1:
+				listAnimals();
 				
-			case "2":
-				System.out.println(addAnimal());
+			case 2:
+				addAnimal();
 				
-			case "3":
-				System.out.println(makeRounds());
+			case 3:
+				makeRounds();
 				
-			case "4":
+			case 4:
 				System.out.println("Thanks for visiting!");
 				keepGoing = false;
 				break;
-				
+		
 			default:
 				System.out.println("Not a valid choice.");
 			}
