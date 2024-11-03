@@ -17,61 +17,53 @@ public class AnimalSanctuaryApp {
 
 	public void run() {
 		boolean keepGoing = true;
-		do(keepGoing) {
-			
+		do {
+
 			printMenu();
 			System.out.println("Choose your zoological option: ");
 			int choice = kb.nextInt();
-			
-			switch(choice) {
+
+			switch (choice) {
 			case 1:
 				listAnimals();
-				
+
 			case 2:
 				System.out.println("What type of animal would you like to add? ");
 				String type = kb.next();
-				if(type.equals("Sasquatch") || type.equals("sasquatch")) {
-					
-				}
-				else if(type.equals("ZombieDuck") || type.equals("zombieduck")) {
-					
-				}
-				else if(type.equals("Fox") || type.equals("fox")) {
-					
-				}
-				else if(type.equals("Dog") || type.equals("dog")) {
-					
-				}
-				else if(type.equals("Platypus") || type.equals("platypus")) {
-					
-				}
-				else {
-					System.out.println("Those don't live in our sanctuary. Try Tiger Bob's.");
+				if (type.equals("Sasquatch") || type.equals("sasquatch")) {
+
+				} else if (type.equals("ZombieDuck") || type.equals("zombieduck")) {
+
+				} else if (type.equals("Fox") || type.equals("fox")) {
+
+				} else if (type.equals("Dog") || type.equals("dog")) {
+
+				} else if (type.equals("Platypus") || type.equals("platypus")) {
+
+				} else {
+					System.err.println("Those don't live in our sanctuary. Try Tiger Bob's.");
 				}
 				addAnimal();
-				
+
 			case 3:
 				makeRounds();
-				
+
 			case 4:
 				System.out.println("Thanks for visiting!");
 				keepGoing = false;
 				break;
-		
+
 			default:
 				System.out.println("Not a valid choice.");
 			}
-			while(keepGoing = true) {
-				
-			}
-		
+			kb.close();
 
-		kb.close();
-	}
+		} while (keepGoing = true);
+
 	}
 
 	private void printMenu() {
-		System.out.println("Choices");
+		System.out.println("**** Choices ****");
 		System.out.println("1: List all animals.");
 		System.out.println("2: Add an animal.");
 		System.out.println("3: Have the Attendant start his rounds.");
