@@ -15,7 +15,6 @@ public class Sanctuary {
 	public void startAttendantsRounds() {
 		attendant.makeRounds(sanctuaryAnimals);
 	}
-	//listAnimals method
 	
 	private void addAnimal(Animal animal) {
 		for(int i = 0; i < sanctuaryAnimals.length; i++) {

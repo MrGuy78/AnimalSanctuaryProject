@@ -2,7 +2,10 @@ package com.skilldistillery.sanctuary.app;
 
 import java.util.Scanner;
 
+import com.skilldistillery.sanctuary.entities.Sanctuary;
+
 public class AnimalSanctuaryApp {
+	private Sanctuary sanctuary = new Sanctuary();
 
 	Scanner kb = new Scanner(System.in);
 
@@ -13,8 +16,7 @@ public class AnimalSanctuaryApp {
 	}
 
 	public void run() {
-		while(true) {
-			
+		do(keepGoing) {
 			
 			printMenu();
 			System.out.println("Choose your zoological options: ");
@@ -22,21 +24,25 @@ public class AnimalSanctuaryApp {
 			
 			switch(choice) {
 			case "1":
-				System.out.println();
+				System.out.println(listAnimals());
 				
 			case "2":
-				System.out.println("");
+				System.out.println(addAnimal());
 				
 			case "3":
-				System.out.println();
+				System.out.println(makeRounds());
 				
 			case "4":
-				System.out.println();
+				System.out.println("Thanks for visiting!");
+				keepGoing = false;
+				break;
 				
 			default:
 				System.out.println("Not a valid choice.");
 			}
-		}
+			while(keepGoing = true) {
+				
+			}
 		
 
 		kb.close();
