@@ -56,7 +56,15 @@ public class AnimalSanctuaryApp {
 		System.out.println("4: Exit");
 	}
 	
-	listAnimals() {
+	public static void listAnimals() {
+		
+	}
+	
+	public static void addAnimal() {
+		
+	}
+	
+	public static void makeRounds() {
 		
 	}
 }
