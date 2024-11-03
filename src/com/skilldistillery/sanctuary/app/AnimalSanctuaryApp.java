@@ -30,19 +30,19 @@ public class AnimalSanctuaryApp {
 			case 2:
 				System.out.println("What type of animal would you like to add? ");
 				String type = kb.next();
-				if(type.equals("Sasquatch")) {
+				if(type.equals("Sasquatch") || type.equals("sasquatch")) {
 					
 				}
-				else if(type.equals("ZombieDuck")) {
+				else if(type.equals("ZombieDuck") || type.equals("zombieduck")) {
 					
 				}
-				else if(type.equals("Fox")) {
+				else if(type.equals("Fox") || type.equals("fox")) {
 					
 				}
-				else if(type.equals("Dog")) {
+				else if(type.equals("Dog") || type.equals("dog")) {
 					
 				}
-				else if(type.equals("Platypus")) {
+				else if(type.equals("Platypus") || type.equals("platypus")) {
 					
 				}
 				else {
