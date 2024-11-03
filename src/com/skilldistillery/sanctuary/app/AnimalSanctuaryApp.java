@@ -6,9 +6,9 @@ import com.skilldistillery.sanctuary.entities.Sanctuary;
 
 public class AnimalSanctuaryApp {
 	private Sanctuary sanctuary = new Sanctuary();
-	
+
 	Scanner kb = new Scanner(System.in);
-	
+
 	public static void main(String[] args) {
 		AnimalSanctuaryApp app = new AnimalSanctuaryApp();
 		app.run();
@@ -19,7 +19,7 @@ public class AnimalSanctuaryApp {
 		do(keepGoing) {
 			
 			printMenu();
-			System.out.println("Choose your zoological options: ");
+			System.out.println("Choose your zoological option: ");
 			int choice = kb.nextInt();
 			
 			switch(choice) {
@@ -27,6 +27,23 @@ public class AnimalSanctuaryApp {
 				listAnimals();
 				
 			case 2:
+				System.out.println("What type of animal would you like to add? ");
+				String type = kb.next();
+				if("Sasquatch") {
+					
+				}
+				else if("ZombieDuck") {
+					
+				}
+				else if("Fox") {
+					
+				}
+				else if("Dog") {
+					
+				}
+				else if("Platypus") {
+					
+				}
 				addAnimal();
 				
 			case 3:
@@ -47,24 +64,25 @@ public class AnimalSanctuaryApp {
 
 		kb.close();
 	}
+	}
 
 	private void printMenu() {
 		System.out.println("Choices");
 		System.out.println("1: List all animals.");
 		System.out.println("2: Add an animal.");
-		System.out.println("3: ");
+		System.out.println("3: Have the Attendant start his rounds.");
 		System.out.println("4: Exit");
 	}
-	
+
 	public static void listAnimals() {
-		
+
 	}
-	
+
 	public static void addAnimal() {
-		
+
 	}
-	
+
 	public static void makeRounds() {
-		
+
 	}
 }
