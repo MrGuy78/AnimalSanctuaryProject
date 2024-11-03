@@ -16,6 +16,7 @@ public class AnimalSanctuaryApp {
 	}
 
 	public void run() {
+		boolean keepGoing = true;
 		do(keepGoing) {
 			
 			printMenu();
@@ -29,19 +30,19 @@ public class AnimalSanctuaryApp {
 			case 2:
 				System.out.println("What type of animal would you like to add? ");
 				String type = kb.next();
-				if(type == "Sasquatch") {
+				if(type.equals("Sasquatch")) {
 					
 				}
-				else if(type == "ZombieDuck") {
+				else if(type.equals("ZombieDuck")) {
 					
 				}
-				else if(type == "Fox") {
+				else if(type.equals("Fox")) {
 					
 				}
-				else if(type =="Dog") {
+				else if(type.equals("Dog")) {
 					
 				}
-				else if(type == "Platypus") {
+				else if(type.equals("Platypus")) {
 					
 				}
 				else {
