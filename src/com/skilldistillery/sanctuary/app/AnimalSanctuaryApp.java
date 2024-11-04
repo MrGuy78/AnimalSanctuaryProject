@@ -25,6 +25,7 @@ public class AnimalSanctuaryApp {
 
 			switch (choice) {
 			case 1:
+				System.out.println("Read 'em and weep, Joe Exotic!");
 				listAnimals();
 
 			case 2:
@@ -53,7 +54,7 @@ public class AnimalSanctuaryApp {
 				keepGoing = false;
 				break;
 
-			default:
+			default: //should loop back to main menu
 				System.out.println("Not a valid choice.");
 			}
 			kb.close();
@@ -71,14 +72,16 @@ public class AnimalSanctuaryApp {
 	}
 
 	public static void listAnimals() {
-
+		//iterate thru array
 	}
 
 	public static void addAnimal() {
+		//iterate thru array
 
 	}
 
 	public static void makeRounds() {
+		//iterate thru array
 
 	}
 }
